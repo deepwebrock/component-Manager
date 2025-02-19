@@ -11,7 +11,9 @@ function App() {
       <div className="flex-grow"> {/* Pushes footer to bottom */}
         <Show />
       </div>
+      <div className="">
       <Footer />
+      </div>
     </div>
   );
 }

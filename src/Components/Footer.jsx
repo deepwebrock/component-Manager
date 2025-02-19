@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white fixed bottom-0 w-full">
+    <footer className="bg-black text-white  bottom-0 w-full">
       <div className="flex justify-evenly items-center">
         <img src="logo2.png" alt="Logo" />
         <span>ELEVATORS</span>
