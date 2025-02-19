@@ -1,21 +1,19 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './Components/Navbar'
-import Footer from './Components/Footer'
-import Show from './Components/Show'
+import { useState } from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Show from "./Components/Show";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     <Navbar/>
-     <Show/>
-     <Footer/>
-    </>
-  )
+    <div className="flex flex-col min-h-screen"> {/* Ensuring full height layout */}
+      <Navbar />
+      <div className="flex-grow"> {/* Pushes footer to bottom */}
+        <Show />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
